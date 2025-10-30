@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>[Your Name] - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7f8;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #005f73;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.4s ease;
+        }
+
+        header.shrink {
+            padding: 15px 0;
+            background-color: #0a9396;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.4rem;
+            transition: font-size 0.4s ease;
+        }
+
+        header.shrink h1 {
+            font-size: 1.8rem;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-style: italic;
+            font-weight: 300;
+        }
+
+        nav {
+            background: #0a9396;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -4px;
+            width: 100%;
+            height: 3px;
+            background: #94d2bd;
+            opacity: 0;
+            transform: scaleX(0);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #94d2bd;
+        }
+
+        nav a:hover::after {
+            opacity: 1;
+            transform: scaleX(1);
+        }
+
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.8s forwards;
+            animation-delay: 0.3s;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            border-bottom: 3px solid #005f73;
+            padding-bottom: 8px;
+            color: #0a9396;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background: #e9f1f7;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+            border-radius: 6px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: default;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        ul li:hover {
+            background-color: #cde7f0;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            margin: 15px 0 0 0;
+        }
+
+        a {
+            color: #0a9396;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #005f73;
+            color: white;
+            font-size: 0.95em;
+            margin-top: 40px;
+        }
+
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 12px 0;
+            }
+
+            header h1 {
+                font-size: 1.6rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            ul li {
+                padding: 12px 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<header>
+  <img src="WhatsApp Image 2025-10-19 at 4.55.22 PM.jpeg" alt="Farha Karigar" 
+    style="width:120px; height:120px; border-radius:50%; object-fit: cover; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);" />
+  <h1>Farha Karigar</h1>
+  <p>IT Support Analyst & Electronics & Communication Engineering Graduate</p>
+</header>
+
+    <!-- <header>
+        <h1>Farha S Karigar</h1>
+        <p>IT Support Analyst & Electronics & Communication Engineering Graduate</p>
+    </header> -->
+
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main id="main-content">
+        <section id="summary" class="fade-section">
+            <h2>Professional Summary</h2>
+            <p>Motivated and detail-oriented IT Support Analyst with a Bachelor’s degree in Electronics and
+                Communication. Eager to apply foundational knowledge of hardware, software, and network troubleshooting
+                to provide effective first-level support. Quick learner with strong problem-solving skills and a
+                commitment to delivering exceptional user service.</p>
+        </section>
+
+        <section id="skills" class="fade-section">
+            <h2>Skills</h2>
+            <ul>
+                <li>Hardware and peripheral troubleshooting and repair</li>
+                <li>Software installation, configuration, and maintenance</li>
+                <li>Network fundamentals and telecommunication connectivity</li>
+                <li>Operating systems: Windows, Linux, Ubuntu</li>
+                <li>Microsoft 365 and business application support</li>
+                <li>Programming: Python, JavaScript, Solidity (blockchain)</li>
+                <li>Cybersecurity basics and vulnerability assessment</li>
+                <li>Tools: Wireshark, Nmap, Metasploit, Burp Suite</li>
+                <li>Strong communication and teamwork skills</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="fade-section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Blockchain-based Medical Data Exchange:</strong> Developed a secure decentralized platform
+                    using IPFS and smart contracts with MetaMask integration.</li>
+                <li><strong>Web Application Vulnerability Scanner:</strong> Built a Python Flask tool to detect XSS and
+                    SQL injection vulnerabilities.</li>
+                <li><strong>Personal Firewall Implementation:</strong> Monitored and filtered network traffic to improve
+                    system security.</li>
+            </ul>
+        </section>
+
+        <section id="education" class="fade-section">
+            <h2>Education</h2>
+            <p><strong>Bachelor of Engineering in Electronics & Communication Engineering</strong><br />
+                KLS Vishwanathrao Deshpande Institute of Technology — 2026</p>
+        </section>
+
+        <section id="contact" class="fade-section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:[Your Email]">farha1484karigar@gmail.com</a></p>
+            <p>Phone: +91 8296084296</p>
+            <p>LinkedIn: <a href="[Your LinkedIn URL]" target="_blank">linkedin.com/in/farha-s-karigar-b35355289</a></p>
+            <p>GitHub: <a href="[Your GitHub URL]" target="_blank">https://github.com/FARHA46</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Farha Karigar. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Shrink header on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 60) {
+                header.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+            }
+        });
+
+        // Fade in sections when scrolled into view
+        const fadeSections = document.querySelectorAll('.fade-section');
+        const options = {
+            threshold: 0.1
+        };
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                    entry.target.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, options);
+
+        fadeSections.forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(30px)';
+            observer.observe(section);
+        });
+    </script>
+
+</body>
+
+</html>
